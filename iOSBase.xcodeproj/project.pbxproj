@@ -51,6 +51,7 @@
 		3638545D2004C4BB00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3638545C2004C4BB00899B11 /* README.md */; };
 		3638545F2004C4EF00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3638545E2004C4EF00899B11 /* README.md */; };
 		363854612004C4FA00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854602004C4F900899B11 /* README.md */; };
+		363854632004CF6300899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854622004CF6300899B11 /* README.md */; };
 		92A34F38F4AC27A3C3ADFC02 /* libPods-iOSBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D497ADAEE224F0451F225E /* libPods-iOSBase.a */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +148,7 @@
 		3638545C2004C4BB00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3638545E2004C4EF00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363854602004C4F900899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		363854622004CF6300899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6D47F575D57BBA9836E5F5A5 /* Pods-iOSBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.release.xcconfig"; sourceTree = "<group>"; };
 		FC0F68CA62C14D611F9401DA /* Pods-iOSBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -369,6 +371,7 @@
 		3638540D2004981D00899B11 /* SandBoxHelper */ = {
 			isa = PBXGroup;
 			children = (
+				363854622004CF6300899B11 /* README.md */,
 				3638540E2004981D00899B11 /* SandBoxHelper.h */,
 				3638540F2004981D00899B11 /* SandBoxHelper.m */,
 			);
@@ -537,6 +540,7 @@
 				363854502004C0A600899B11 /* close_icon@2x.png in Resources */,
 				363853E920046E0400899B11 /* README.md in Resources */,
 				363854612004C4FA00899B11 /* README.md in Resources */,
+				363854632004CF6300899B11 /* README.md in Resources */,
 				363854572004C0C200899B11 /* README.md in Resources */,
 				363853E320046DF500899B11 /* README.md in Resources */,
 				363854522004C0A600899B11 /* sure_placeholder_error@3x.png in Resources */,
