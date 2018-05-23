@@ -8,7 +8,8 @@
 
 #import "BaseViewController.h"
 
-@interface BaseViewController ()
+@interface BaseViewController ()<CQPlaceholderViewDelegate>
+
 @property (nonatomic,strong) UIImageView* noDataView;
 @end
 
@@ -41,6 +42,44 @@
     }
 }
 
+- (void)reloadViewData {
+	
+}
+
+#pragma mark - Delegate - 占位图
+/** 占位图的重新加载按钮点击时回调 */
+- (void)placeholderView:(CQPlaceholderView *)placeholderView reloadButtonDidClick:(UIButton *)sender{
+	switch (placeholderView.type) {
+		case CQPlaceholderViewTypeNoGoods:       // 没商品
+		{
+			//[self.view makeToast:@"买个球啊"];
+		}
+			break;
+			
+		case CQPlaceholderViewTypeNoOrder:       // 没有订单
+		{
+			//[self.view makeToast:@"拉到就拉到"];
+		}
+			break;
+			
+		case CQPlaceholderViewTypeNoNetwork:     // 没网
+		{
+			//[self.view makeToast:@"没网适合打排位"];
+		}
+			break;
+			
+		case CQPlaceholderViewTypeBeautifulGirl: // 妹纸
+		{
+			//[self.view makeToast:@"哦，那你很棒棒哦"];
+		}
+			break;
+			
+		default:
+			break;
+	}
+	// 重新加载页面
+	[self reloadViewData];
+}
 
 
 - (void)didReceiveMemoryWarning {

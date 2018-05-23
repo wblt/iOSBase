@@ -30,4 +30,8 @@
     [cell setModel:self.datas[indexPath.row]];
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+}
 @end
