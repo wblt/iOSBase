@@ -62,6 +62,7 @@
 		363854612004C4FA00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854602004C4F900899B11 /* README.md */; };
 		363854632004CF6300899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854622004CF6300899B11 /* README.md */; };
 		92A34F38F4AC27A3C3ADFC02 /* libPods-iOSBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D497ADAEE224F0451F225E /* libPods-iOSBase.a */; };
+		F84C76BD20B5654400FA95CF /* CQPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C76BC20B5654300FA95CF /* CQPlaceholderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,8 @@
 		363854602004C4F900899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363854622004CF6300899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6D47F575D57BBA9836E5F5A5 /* Pods-iOSBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.release.xcconfig"; sourceTree = "<group>"; };
+		F84C76BB20B5654300FA95CF /* CQPlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQPlaceholderView.h; sourceTree = "<group>"; };
+		F84C76BC20B5654300FA95CF /* CQPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQPlaceholderView.m; sourceTree = "<group>"; };
 		FC0F68CA62C14D611F9401DA /* Pods-iOSBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -372,6 +375,7 @@
 		363853E720046E0300899B11 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				F84C76BA20B5654300FA95CF /* CQPlaceholderView */,
 				363853E820046E0300899B11 /* README.md */,
 				3638542720049D8500899B11 /* BaseNavViewController.h */,
 				3638542820049D8500899B11 /* BaseNavViewController.m */,
@@ -498,6 +502,15 @@
 				6D47F575D57BBA9836E5F5A5 /* Pods-iOSBase.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F84C76BA20B5654300FA95CF /* CQPlaceholderView */ = {
+			isa = PBXGroup;
+			children = (
+				F84C76BB20B5654300FA95CF /* CQPlaceholderView.h */,
+				F84C76BC20B5654300FA95CF /* CQPlaceholderView.m */,
+			);
+			path = CQPlaceholderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -728,6 +741,7 @@
 				3638542B20049D8500899B11 /* BaseNavViewController.m in Sources */,
 				363854252004997200899B11 /* NetworkSingleton.m in Sources */,
 				363853DE20046C4B00899B11 /* SYCacheManager.m in Sources */,
+				F84C76BD20B5654400FA95CF /* CQPlaceholderView.m in Sources */,
 				3638541C2004981D00899B11 /* UIView+Extend.m in Sources */,
 				36024D4720B556D50063513B /* BaseAdapter.m in Sources */,
 				363853AA200465BA00899B11 /* AppDelegate.m in Sources */,
