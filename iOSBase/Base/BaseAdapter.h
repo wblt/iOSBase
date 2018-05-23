@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^DidSelectBlock)(id data);
+
 @interface BaseAdapter : NSObject
 
 @property(nonatomic,strong)NSMutableArray *datas;
@@ -19,4 +21,5 @@
 - (void)clear;
 
 - (void)reloadData;
+
 @end
