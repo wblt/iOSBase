@@ -9,4 +9,5 @@ pod 'SDWebImage', '~> 4.0'
 pod 'IQKeyboardManager'
 pod 'SVProgressHUD'
 pod 'LKDBHelper'
+pod 'SDAutoLayout', '~> 2.1.3'
 end

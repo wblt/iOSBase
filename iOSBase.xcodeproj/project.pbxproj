@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36024D3220B540FC0063513B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36024D3120B540FC0063513B /* README.md */; };
+		36024D3420B541060063513B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36024D3320B541060063513B /* README.md */; };
+		36024D3620B541120063513B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36024D3520B541120063513B /* README.md */; };
+		36024D3820B5411D0063513B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36024D3720B5411D0063513B /* README.md */; };
+		36024D3B20B5413A0063513B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D3A20B5413A0063513B /* TestViewController.m */; };
+		36024D3E20B541570063513B /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D3D20B541570063513B /* TestModel.m */; };
+		36024D4120B546320063513B /* TestAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D4020B546320063513B /* TestAdapter.m */; };
+		36024D4420B549310063513B /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D4320B549310063513B /* TestCell.m */; };
 		363853AA200465BA00899B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853A9200465BA00899B11 /* AppDelegate.m */; };
 		363853AD200465BA00899B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853AC200465BA00899B11 /* ViewController.m */; };
 		363853B0200465BA00899B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363853AE200465BA00899B11 /* Main.storyboard */; };
@@ -74,6 +82,18 @@
 
 /* Begin PBXFileReference section */
 		02D497ADAEE224F0451F225E /* libPods-iOSBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36024D3120B540FC0063513B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36024D3320B541060063513B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36024D3520B541120063513B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36024D3720B5411D0063513B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36024D3920B5413A0063513B /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		36024D3A20B5413A0063513B /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		36024D3C20B541570063513B /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		36024D3D20B541570063513B /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		36024D3F20B546320063513B /* TestAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAdapter.h; sourceTree = "<group>"; };
+		36024D4020B546320063513B /* TestAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAdapter.m; sourceTree = "<group>"; };
+		36024D4220B549310063513B /* TestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		36024D4320B549310063513B /* TestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		363853A5200465BA00899B11 /* iOSBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363853A8200465BA00899B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		363853A9200465BA00899B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -185,6 +205,57 @@
 				02D497ADAEE224F0451F225E /* libPods-iOSBase.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36024D2C20B540BE0063513B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				36024D2D20B540BE0063513B /* adapter */,
+				36024D2E20B540BE0063513B /* Controller */,
+				36024D2F20B540BE0063513B /* Model */,
+				36024D3020B540BE0063513B /* View */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		36024D2D20B540BE0063513B /* adapter */ = {
+			isa = PBXGroup;
+			children = (
+				36024D3320B541060063513B /* README.md */,
+				36024D3F20B546320063513B /* TestAdapter.h */,
+				36024D4020B546320063513B /* TestAdapter.m */,
+			);
+			path = adapter;
+			sourceTree = "<group>";
+		};
+		36024D2E20B540BE0063513B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36024D3120B540FC0063513B /* README.md */,
+				36024D3920B5413A0063513B /* TestViewController.h */,
+				36024D3A20B5413A0063513B /* TestViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		36024D2F20B540BE0063513B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36024D3520B541120063513B /* README.md */,
+				36024D3C20B541570063513B /* TestModel.h */,
+				36024D3D20B541570063513B /* TestModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36024D3020B540BE0063513B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36024D3720B5411D0063513B /* README.md */,
+				36024D4220B549310063513B /* TestCell.h */,
+				36024D4320B549310063513B /* TestCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3638539C200465BA00899B11 = {
@@ -322,6 +393,7 @@
 		363853ED2004706800899B11 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				36024D2C20B540BE0063513B /* Test */,
 				363853EE2004706800899B11 /* README.md */,
 			);
 			path = Modules;
@@ -536,14 +608,18 @@
 				363853B5200465BA00899B11 /* LaunchScreen.storyboard in Resources */,
 				3638545B2004C13200899B11 /* README.md in Resources */,
 				3638545D2004C4BB00899B11 /* README.md in Resources */,
+				36024D3620B541120063513B /* README.md in Resources */,
 				363853B2200465BA00899B11 /* Assets.xcassets in Resources */,
 				363854502004C0A600899B11 /* close_icon@2x.png in Resources */,
+				36024D3220B540FC0063513B /* README.md in Resources */,
 				363853E920046E0400899B11 /* README.md in Resources */,
 				363854612004C4FA00899B11 /* README.md in Resources */,
 				363854632004CF6300899B11 /* README.md in Resources */,
 				363854572004C0C200899B11 /* README.md in Resources */,
 				363853E320046DF500899B11 /* README.md in Resources */,
+				36024D3420B541060063513B /* README.md in Resources */,
 				363854522004C0A600899B11 /* sure_placeholder_error@3x.png in Resources */,
+				36024D3820B5411D0063513B /* README.md in Resources */,
 				363853E020046DDC00899B11 /* README.md in Resources */,
 				363853F12004706800899B11 /* README.md in Resources */,
 				363854542004C0A600899B11 /* back_icon@2x.png in Resources */,
@@ -636,9 +712,13 @@
 				3638541E2004981D00899B11 /* SandBoxHelper.m in Sources */,
 				363853AD200465BA00899B11 /* ViewController.m in Sources */,
 				3638541F2004981D00899B11 /* Util.m in Sources */,
+				36024D3B20B5413A0063513B /* TestViewController.m in Sources */,
 				363853B8200465BA00899B11 /* main.m in Sources */,
 				3638541B2004981D00899B11 /* UIColor+Extend.m in Sources */,
 				3638541D2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.m in Sources */,
+				36024D4420B549310063513B /* TestCell.m in Sources */,
+				36024D3E20B541570063513B /* TestModel.m in Sources */,
+				36024D4120B546320063513B /* TestAdapter.m in Sources */,
 				363854262004997200899B11 /* RequestParams.m in Sources */,
 				3638542B20049D8500899B11 /* BaseNavViewController.m in Sources */,
 				363854252004997200899B11 /* NetworkSingleton.m in Sources */,
