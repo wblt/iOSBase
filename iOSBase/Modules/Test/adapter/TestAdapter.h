@@ -8,14 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "TestModel.h"
+#import "BaseAdapter.h"
 
-@interface TestAdapter : NSObject
+@interface TestAdapter :BaseAdapter
 
-- (void)setAdapter:(UITableView *)tableView;
-
-- (void)addAll:(NSMutableArray *)t;
-
-- (void)clear;
-
-- (void)reloadData;
 @end

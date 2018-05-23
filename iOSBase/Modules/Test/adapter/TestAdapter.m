@@ -9,21 +9,11 @@
 #import "TestAdapter.h"
 #import "TestCell.h"
 @interface TestAdapter ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)NSMutableArray *datas;
-@property(nonatomic,strong)UITableView *tableview;
+
 @end
 @implementation TestAdapter
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        _datas = [[NSMutableArray alloc] init];
-    }
-    return self;
-}
-
 - (void)setAdapter:(UITableView *)tableView {
-    self.tableview = tableView;
+    [super setAdapter:tableView];
     tableView.dataSource = self;
     tableView.delegate = self;
 }
@@ -40,17 +30,4 @@
     [cell setModel:self.datas[indexPath.row]];
     return cell;
 }
-
-- (void)addAll:(NSMutableArray *)t {
-    [self.datas addObjectsFromArray:t];
-}
-
-- (void)clear {
-    [self.datas removeAllObjects];
-}
-
-- (void)reloadData {
-    [self.tableview reloadData];
-}
-
 @end

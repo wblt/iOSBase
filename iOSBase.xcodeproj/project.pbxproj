@@ -15,6 +15,7 @@
 		36024D3E20B541570063513B /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D3D20B541570063513B /* TestModel.m */; };
 		36024D4120B546320063513B /* TestAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D4020B546320063513B /* TestAdapter.m */; };
 		36024D4420B549310063513B /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D4320B549310063513B /* TestCell.m */; };
+		36024D4720B556D50063513B /* BaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D4620B556D50063513B /* BaseAdapter.m */; };
 		363853AA200465BA00899B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853A9200465BA00899B11 /* AppDelegate.m */; };
 		363853AD200465BA00899B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853AC200465BA00899B11 /* ViewController.m */; };
 		363853B0200465BA00899B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363853AE200465BA00899B11 /* Main.storyboard */; };
@@ -94,6 +95,8 @@
 		36024D4020B546320063513B /* TestAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAdapter.m; sourceTree = "<group>"; };
 		36024D4220B549310063513B /* TestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
 		36024D4320B549310063513B /* TestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		36024D4520B556D50063513B /* BaseAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAdapter.h; sourceTree = "<group>"; };
+		36024D4620B556D50063513B /* BaseAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAdapter.m; sourceTree = "<group>"; };
 		363853A5200465BA00899B11 /* iOSBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363853A8200465BA00899B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		363853A9200465BA00899B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -374,6 +377,8 @@
 				3638542820049D8500899B11 /* BaseNavViewController.m */,
 				3638542A20049D8500899B11 /* BaseViewController.h */,
 				3638542920049D8500899B11 /* BaseViewController.m */,
+				36024D4520B556D50063513B /* BaseAdapter.h */,
+				36024D4620B556D50063513B /* BaseAdapter.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -724,6 +729,7 @@
 				363854252004997200899B11 /* NetworkSingleton.m in Sources */,
 				363853DE20046C4B00899B11 /* SYCacheManager.m in Sources */,
 				3638541C2004981D00899B11 /* UIView+Extend.m in Sources */,
+				36024D4720B556D50063513B /* BaseAdapter.m in Sources */,
 				363853AA200465BA00899B11 /* AppDelegate.m in Sources */,
 				3638541A2004981D00899B11 /* UICollectionView+IndexPath.m in Sources */,
 				363854182004981D00899B11 /* NSString+MD5.m in Sources */,
