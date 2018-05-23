@@ -32,5 +32,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.selectBlock) {
+        TestModel *test = self.datas[indexPath.row];
+        self.selectBlock(tableView,test,indexPath);
+    }
 }
 @end

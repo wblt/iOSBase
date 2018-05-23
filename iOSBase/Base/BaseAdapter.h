@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^DidSelectBlock)(id data);
+typedef void(^DidSelectBlock)(UITableView *tableView,NSObject *b,NSIndexPath *p);
 
 @interface BaseAdapter : NSObject
 
 @property(nonatomic,strong)NSMutableArray *datas;
+
+@property(nonatomic, copy) DidSelectBlock selectBlock;
 
 - (void)setAdapter:(UITableView *)tableView;
 

@@ -32,22 +32,24 @@
     // 设置适配器
     self.adapter = [[TestAdapter alloc] init];
     [self.adapter setAdapter:tableView];
+    self.adapter.selectBlock = ^(UITableView *tableView, NSObject *b, NSIndexPath *p) {
+        [SVProgressHUD showInfoWithStatus:@"点击"];
+    };
     
-//    // 设置数据
-//    NSMutableArray *datas = [NSMutableArray array];
-//    for (int i = 0; i<10; i++) {
-//        TestModel *test = [[TestModel alloc] init];
-//        [test setTitle:@"我是一条cell"];
-//        [datas addObject:test];
+    // 设置数据
+    NSMutableArray *datas = [NSMutableArray array];
+    for (int i = 0; i<10; i++) {
+        TestModel *test = [[TestModel alloc] init];
+        [test setTitle:@"我是一条cell"];
+        [datas addObject:test];
+    }
+    [self.adapter addAll:datas];
+    [self.adapter reloadData];
+//    if (self.adapter.datas.count == 0) {
+//        // 有tabbar 的情况
+//        self.placeholderView = [[CQPlaceholderView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 49) type:CQPlaceholderViewTypeBeautifulGirl delegate:self];
+//        [tableView addSubview:self.placeholderView];
 //    }
-//    [self.adapter addAll:datas];
-//    [self.adapter reloadData];
-	
-	if (self.adapter.datas.count == 0) {
-		// 有tabbar 的情况
-		self.placeholderView = [[CQPlaceholderView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 49) type:CQPlaceholderViewTypeBeautifulGirl delegate:self];
-		[tableView addSubview:self.placeholderView];
-	}
 }
 
 - (void)reloadViewData {
