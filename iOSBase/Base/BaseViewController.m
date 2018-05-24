@@ -68,12 +68,6 @@
 		}
 			break;
 			
-		case CQPlaceholderViewTypeBeautifulGirl: // 妹纸
-		{
-			//[self.view makeToast:@"哦，那你很棒棒哦"];
-		}
-			break;
-			
 		default:
 			break;
 	}

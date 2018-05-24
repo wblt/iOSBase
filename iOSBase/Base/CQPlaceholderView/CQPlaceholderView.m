@@ -78,14 +78,6 @@
         }
             break;
             
-        case CQPlaceholderViewTypeBeautifulGirl: // 妹纸
-        {
-            imageView.image = [UIImage imageNamed:@"妹纸"];
-            descLabel.text = @"你会至少在此停留3秒钟";
-            [reloadButton setTitle:@"不爱妹纸" forState:UIControlStateNormal];
-        }
-            break;
-            
         default:
             break;
     }

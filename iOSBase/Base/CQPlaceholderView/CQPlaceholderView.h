@@ -16,8 +16,6 @@ typedef NS_ENUM(NSInteger, CQPlaceholderViewType) {
     CQPlaceholderViewTypeNoOrder,
     /** 没商品 */
     CQPlaceholderViewTypeNoGoods,
-    /** 美丽的妹纸 */
-    CQPlaceholderViewTypeBeautifulGirl
 };
 
 #pragma mark - @protocol
