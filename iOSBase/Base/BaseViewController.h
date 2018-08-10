@@ -7,24 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CQPlaceholderView.h"
 
 @interface BaseViewController : UIViewController
-// 新项目需要去自定义 该类的样式。 修改文字、图片等
-@property(nonatomic,strong)CQPlaceholderView *placeholderView;
 
-/**
- *  显示没有数据页面
- */
--(void)showNoDataImage;
-
-/**
- *  移除无数据页面
- */
--(void)removeNoDataImage;
-
-//重新加载数据
-- (void)reloadViewData;
 
 @end
 

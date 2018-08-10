@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "TestViewController.h"
 @interface ViewController ()
 
 @end
@@ -15,8 +14,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    TestViewController *testvc = [[TestViewController alloc] init];
-    [self.navigationController pushViewController:testvc animated:YES];
+
 }
 
 
