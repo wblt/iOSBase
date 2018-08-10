@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36024D3220B540FC0063513B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36024D3120B540FC0063513B /* README.md */; };
-		36024D3420B541060063513B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36024D3320B541060063513B /* README.md */; };
-		36024D3620B541120063513B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36024D3520B541120063513B /* README.md */; };
-		36024D3820B5411D0063513B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36024D3720B5411D0063513B /* README.md */; };
-		36024D3B20B5413A0063513B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D3A20B5413A0063513B /* TestViewController.m */; };
-		36024D3E20B541570063513B /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D3D20B541570063513B /* TestModel.m */; };
-		36024D4120B546320063513B /* TestAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D4020B546320063513B /* TestAdapter.m */; };
-		36024D4420B549310063513B /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D4320B549310063513B /* TestCell.m */; };
 		36024D4720B556D50063513B /* BaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36024D4620B556D50063513B /* BaseAdapter.m */; };
 		363853AA200465BA00899B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853A9200465BA00899B11 /* AppDelegate.m */; };
 		363853AD200465BA00899B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853AC200465BA00899B11 /* ViewController.m */; };
@@ -40,7 +32,6 @@
 		3638541B2004981D00899B11 /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 363854082004981D00899B11 /* UIColor+Extend.m */; };
 		3638541C2004981D00899B11 /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638540A2004981D00899B11 /* UIView+Extend.m */; };
 		3638541D2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638540C2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.m */; };
-		3638541E2004981D00899B11 /* SandBoxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638540F2004981D00899B11 /* SandBoxHelper.m */; };
 		3638541F2004981D00899B11 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 363854122004981D00899B11 /* Util.m */; };
 		363854202004981D00899B11 /* BeanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 363854152004981D00899B11 /* BeanManager.m */; };
 		363854252004997200899B11 /* NetworkSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 363854212004997200899B11 /* NetworkSingleton.m */; };
@@ -60,9 +51,7 @@
 		3638545D2004C4BB00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3638545C2004C4BB00899B11 /* README.md */; };
 		3638545F2004C4EF00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3638545E2004C4EF00899B11 /* README.md */; };
 		363854612004C4FA00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854602004C4F900899B11 /* README.md */; };
-		363854632004CF6300899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854622004CF6300899B11 /* README.md */; };
 		92A34F38F4AC27A3C3ADFC02 /* libPods-iOSBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D497ADAEE224F0451F225E /* libPods-iOSBase.a */; };
-		F84C76BD20B5654400FA95CF /* CQPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C76BC20B5654300FA95CF /* CQPlaceholderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,18 +73,6 @@
 
 /* Begin PBXFileReference section */
 		02D497ADAEE224F0451F225E /* libPods-iOSBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		36024D3120B540FC0063513B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		36024D3320B541060063513B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		36024D3520B541120063513B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		36024D3720B5411D0063513B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		36024D3920B5413A0063513B /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		36024D3A20B5413A0063513B /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		36024D3C20B541570063513B /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
-		36024D3D20B541570063513B /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
-		36024D3F20B546320063513B /* TestAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAdapter.h; sourceTree = "<group>"; };
-		36024D4020B546320063513B /* TestAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAdapter.m; sourceTree = "<group>"; };
-		36024D4220B549310063513B /* TestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
-		36024D4320B549310063513B /* TestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		36024D4520B556D50063513B /* BaseAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAdapter.h; sourceTree = "<group>"; };
 		36024D4620B556D50063513B /* BaseAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAdapter.m; sourceTree = "<group>"; };
 		363853A5200465BA00899B11 /* iOSBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +101,6 @@
 		363853EE2004706800899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363853F32004714D00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363853F5200495C100899B11 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		363853F62004977400899B11 /* FontAndColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
-		363853F72004977400899B11 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 		363853F82004977400899B11 /* FlowAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowAPI.h; sourceTree = "<group>"; };
 		363853FA2004981D00899B11 /* SPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUtil.h; sourceTree = "<group>"; };
 		363853FB2004981D00899B11 /* SPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUtil.m; sourceTree = "<group>"; };
@@ -144,8 +119,6 @@
 		3638540A2004981D00899B11 /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
 		3638540B2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertViewAndActionSheet.h"; sourceTree = "<group>"; };
 		3638540C2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertViewAndActionSheet.m"; sourceTree = "<group>"; };
-		3638540E2004981D00899B11 /* SandBoxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandBoxHelper.h; sourceTree = "<group>"; };
-		3638540F2004981D00899B11 /* SandBoxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandBoxHelper.m; sourceTree = "<group>"; };
 		363854112004981D00899B11 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		363854122004981D00899B11 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		363854142004981D00899B11 /* BeanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeanManager.h; sourceTree = "<group>"; };
@@ -172,10 +145,7 @@
 		3638545C2004C4BB00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3638545E2004C4EF00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363854602004C4F900899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		363854622004CF6300899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6D47F575D57BBA9836E5F5A5 /* Pods-iOSBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.release.xcconfig"; sourceTree = "<group>"; };
-		F84C76BB20B5654300FA95CF /* CQPlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQPlaceholderView.h; sourceTree = "<group>"; };
-		F84C76BC20B5654300FA95CF /* CQPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQPlaceholderView.m; sourceTree = "<group>"; };
 		FC0F68CA62C14D611F9401DA /* Pods-iOSBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,57 +181,6 @@
 				02D497ADAEE224F0451F225E /* libPods-iOSBase.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		36024D2C20B540BE0063513B /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				36024D2D20B540BE0063513B /* adapter */,
-				36024D2E20B540BE0063513B /* Controller */,
-				36024D2F20B540BE0063513B /* Model */,
-				36024D3020B540BE0063513B /* View */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		36024D2D20B540BE0063513B /* adapter */ = {
-			isa = PBXGroup;
-			children = (
-				36024D3320B541060063513B /* README.md */,
-				36024D3F20B546320063513B /* TestAdapter.h */,
-				36024D4020B546320063513B /* TestAdapter.m */,
-			);
-			path = adapter;
-			sourceTree = "<group>";
-		};
-		36024D2E20B540BE0063513B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				36024D3120B540FC0063513B /* README.md */,
-				36024D3920B5413A0063513B /* TestViewController.h */,
-				36024D3A20B5413A0063513B /* TestViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		36024D2F20B540BE0063513B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				36024D3520B541120063513B /* README.md */,
-				36024D3C20B541570063513B /* TestModel.h */,
-				36024D3D20B541570063513B /* TestModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		36024D3020B540BE0063513B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				36024D3720B5411D0063513B /* README.md */,
-				36024D4220B549310063513B /* TestCell.h */,
-				36024D4320B549310063513B /* TestCell.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		3638539C200465BA00899B11 = {
@@ -334,7 +253,6 @@
 				363854132004981D00899B11 /* BeanManager */,
 				363854022004981D00899B11 /* Category */,
 				363853FC2004981D00899B11 /* Encrypt */,
-				3638540D2004981D00899B11 /* SandBoxHelper */,
 				363853F92004981D00899B11 /* SPUtil */,
 				363854102004981D00899B11 /* Util */,
 				363853DB20046C4B00899B11 /* SYCacheManager */,
@@ -358,8 +276,6 @@
 				363853E220046DF500899B11 /* README.md */,
 				363853F5200495C100899B11 /* PrefixHeader.pch */,
 				363853F82004977400899B11 /* FlowAPI.h */,
-				363853F62004977400899B11 /* FontAndColorMacros.h */,
-				363853F72004977400899B11 /* UtilsMacros.h */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -375,7 +291,6 @@
 		363853E720046E0300899B11 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				F84C76BA20B5654300FA95CF /* CQPlaceholderView */,
 				363853E820046E0300899B11 /* README.md */,
 				3638542720049D8500899B11 /* BaseNavViewController.h */,
 				3638542820049D8500899B11 /* BaseNavViewController.m */,
@@ -402,7 +317,6 @@
 		363853ED2004706800899B11 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				36024D2C20B540BE0063513B /* Test */,
 				363853EE2004706800899B11 /* README.md */,
 			);
 			path = Modules;
@@ -449,16 +363,6 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		3638540D2004981D00899B11 /* SandBoxHelper */ = {
-			isa = PBXGroup;
-			children = (
-				363854622004CF6300899B11 /* README.md */,
-				3638540E2004981D00899B11 /* SandBoxHelper.h */,
-				3638540F2004981D00899B11 /* SandBoxHelper.m */,
-			);
-			path = SandBoxHelper;
-			sourceTree = "<group>";
-		};
 		363854102004981D00899B11 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,15 +406,6 @@
 				6D47F575D57BBA9836E5F5A5 /* Pods-iOSBase.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		F84C76BA20B5654300FA95CF /* CQPlaceholderView */ = {
-			isa = PBXGroup;
-			children = (
-				F84C76BB20B5654300FA95CF /* CQPlaceholderView.h */,
-				F84C76BC20B5654300FA95CF /* CQPlaceholderView.m */,
-			);
-			path = CQPlaceholderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,18 +521,13 @@
 				363853B5200465BA00899B11 /* LaunchScreen.storyboard in Resources */,
 				3638545B2004C13200899B11 /* README.md in Resources */,
 				3638545D2004C4BB00899B11 /* README.md in Resources */,
-				36024D3620B541120063513B /* README.md in Resources */,
 				363853B2200465BA00899B11 /* Assets.xcassets in Resources */,
 				363854502004C0A600899B11 /* close_icon@2x.png in Resources */,
-				36024D3220B540FC0063513B /* README.md in Resources */,
 				363853E920046E0400899B11 /* README.md in Resources */,
 				363854612004C4FA00899B11 /* README.md in Resources */,
-				363854632004CF6300899B11 /* README.md in Resources */,
 				363854572004C0C200899B11 /* README.md in Resources */,
 				363853E320046DF500899B11 /* README.md in Resources */,
-				36024D3420B541060063513B /* README.md in Resources */,
 				363854522004C0A600899B11 /* sure_placeholder_error@3x.png in Resources */,
-				36024D3820B5411D0063513B /* README.md in Resources */,
 				363853E020046DDC00899B11 /* README.md in Resources */,
 				363853F12004706800899B11 /* README.md in Resources */,
 				363854542004C0A600899B11 /* back_icon@2x.png in Resources */,
@@ -727,21 +617,15 @@
 				363854192004981D00899B11 /* UIButton+XYButton.m in Sources */,
 				363854162004981D00899B11 /* SPUtil.m in Sources */,
 				363854172004981D00899B11 /* GTMBase64.m in Sources */,
-				3638541E2004981D00899B11 /* SandBoxHelper.m in Sources */,
 				363853AD200465BA00899B11 /* ViewController.m in Sources */,
 				3638541F2004981D00899B11 /* Util.m in Sources */,
-				36024D3B20B5413A0063513B /* TestViewController.m in Sources */,
 				363853B8200465BA00899B11 /* main.m in Sources */,
 				3638541B2004981D00899B11 /* UIColor+Extend.m in Sources */,
 				3638541D2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.m in Sources */,
-				36024D4420B549310063513B /* TestCell.m in Sources */,
-				36024D3E20B541570063513B /* TestModel.m in Sources */,
-				36024D4120B546320063513B /* TestAdapter.m in Sources */,
 				363854262004997200899B11 /* RequestParams.m in Sources */,
 				3638542B20049D8500899B11 /* BaseNavViewController.m in Sources */,
 				363854252004997200899B11 /* NetworkSingleton.m in Sources */,
 				363853DE20046C4B00899B11 /* SYCacheManager.m in Sources */,
-				F84C76BD20B5654400FA95CF /* CQPlaceholderView.m in Sources */,
 				3638541C2004981D00899B11 /* UIView+Extend.m in Sources */,
 				36024D4720B556D50063513B /* BaseAdapter.m in Sources */,
 				363853AA200465BA00899B11 /* AppDelegate.m in Sources */,
