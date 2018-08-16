@@ -9,6 +9,8 @@
 #import "SureWebViewController.h"
 #import <WebKit/WebKit.h>
 static CGFloat const NAVI_HEIGHT = 64;
+#define KScreenWidth ([[UIScreen mainScreen] bounds].size.width)
+#define KScreenHeight [[UIScreen mainScreen] bounds].size.height
 @interface SureWebViewController ()<WKNavigationDelegate,WKUIDelegate,UIGestureRecognizerDelegate,WKScriptMessageHandler>
 @property (nonatomic, strong) WKWebView *wk_WebView;
 @property (nonatomic, strong) UIBarButtonItem *backBarButtonItem;
@@ -22,11 +24,27 @@ static CGFloat const NAVI_HEIGHT = 64;
 @implementation SureWebViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //    self.title = @"首页";
+    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     [self createWebView];
     [self createNaviItem];
     [self loadRequest];
     // Do any additional setup after loading the view.
 }
+//
+//- (void)navUI {
+//    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+//
+//    /**<设置导航栏背景颜色*/
+//    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+//    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+//    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor blackColor], NSFontAttributeName : [UIFont systemFontOfSize:16]}];
+//
+//    UIBarButtonItem *backbutton = [[UIBarButtonItem alloc] init];
+//    backbutton.title = @"";
+//    self.navigationItem.backBarButtonItem = backbutton;
+//}
+
 #pragma mark 版本适配
 - (void)createWebView {
     self.view.backgroundColor = [UIColor whiteColor];
@@ -145,9 +163,9 @@ static CGFloat const NAVI_HEIGHT = 64;
 
 - (void)showLeftBarButtonItem {
     if ([_wk_WebView canGoBack]) {
-        self.navigationItem.leftBarButtonItems = @[self.backBarButtonItem,self.closeBarButtonItem];
+        self.navigationItem.leftBarButtonItems = @[self.backBarButtonItem];
     } else {
-        self.navigationItem.leftBarButtonItem = self.backBarButtonItem;
+        self.navigationItem.leftBarButtonItem = nil;
     }
 }
 
@@ -165,12 +183,13 @@ static CGFloat const NAVI_HEIGHT = 64;
 
 - (UIBarButtonItem*)backBarButtonItem {
     if (!_backBarButtonItem) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setImage:[UIImage imageNamed:@"back_icon"] forState:UIControlStateNormal];
-        [button setTitle:@"返回" forState:UIControlStateNormal];
-//        _backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
-        [button addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
-        _backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        //        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        //        [button setImage:[UIImage imageNamed:@"back_icon"] forState:UIControlStateNormal];
+        //        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        //        [button setTitle:@"返回" forState:UIControlStateNormal];
+        _backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back_icon"] style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
+        //        [button addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
+        //        _backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     }
     return _backBarButtonItem;
 }
@@ -202,7 +221,13 @@ static CGFloat const NAVI_HEIGHT = 64;
 
 - (UIBarButtonItem*)closeBarButtonItem {
     if (!_closeBarButtonItem) {
-        _closeBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"关闭" style:UIBarButtonItemStylePlain target:self action:@selector(close:)];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [button setImage:[UIImage imageNamed:@"close_icon"] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button setTitle:@"关闭" forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(close:) forControlEvents:UIControlEventTouchUpInside];
+        _closeBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        //        _closeBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"关闭" style:UIBarButtonItemStylePlain target:self action:@selector(close:)];
     }
     return _closeBarButtonItem;
 }
@@ -266,7 +291,7 @@ static CGFloat const NAVI_HEIGHT = 64;
 - (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation{
     //导航栏配置
     [webView evaluateJavaScript:@"document.title" completionHandler:^(id _Nullable title, NSError * _Nullable error) {
-        self.navigationItem.title = title;
+        self.title = title;
     }];
     [self showLeftBarButtonItem];
     [_refreshControl endRefreshing];
@@ -361,14 +386,66 @@ static CGFloat const NAVI_HEIGHT = 64;
     [self presentViewController:alert animated:YES completion:NULL];
     
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 处理打开微信的方式
+//- (void)webView:(WKWebView*)webView decidePolicyForNavigationAction:(WKNavigationAction*)navigationAction decisionHandler:(void(^)(WKNavigationActionPolicy))decisionHandler{
+//    WKNavigationActionPolicy actionPolicy = WKNavigationActionPolicyAllow;
+//    NSString *urlString = [navigationAction.request.URL absoluteString];
+//    urlString = [urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    NSString *wxPre = @"https://wx.tenpay.com/cgi-bin/mmpayweb-bin/checkmweb";
+//    if ([urlString containsString:@"weixin://wap/pay?"]) {
+//        actionPolicy = WKNavigationActionPolicyCancel;
+//        if([urlString hasPrefix:wxPre]) {
+//            NSLog(@"ss");
+//        }
+//        NSURL *url = [NSURL URLWithString:urlString];
+//        if ([[UIApplication sharedApplication] respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+//            if (@available(iOS 10.0, *)) {
+//                [[UIApplication sharedApplication] openURL:url options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@NO} completionHandler:^(BOOL success) {
+//                }];
+//            } else {
+//                // Fallback on earlier versions
+//            }
+//        } else {
+//            [[UIApplication sharedApplication] openURL:webView.URL];
+//        }
+//    }
+//    decisionHandler(actionPolicy);
+//}
+
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    NSURLRequest *request = navigationAction.request;
+    NSURL *url = navigationAction.request.URL;
+    if ([url.absoluteString hasPrefix:@"https://wx.tenpay.com/cgi-bin/mmpayweb-bin/checkmweb"] && ![url.absoluteString hasSuffix:@"redirect_url=yg.welcare-tech.com.cn://"]) {
+        decisionHandler(WKNavigationActionPolicyCancel);
+        
+        NSMutableURLRequest *newRequest = [[NSMutableURLRequest alloc] init];
+        newRequest.allHTTPHeaderFields = request.allHTTPHeaderFields;
+        NSString *newURLStr = [url.absoluteString stringByAppendingString:@"&redirect_url=yg.welcare-tech.com.cn://"];
+        newRequest.URL = [NSURL URLWithString:newURLStr];
+        [webView loadRequest:newRequest];
+    }else {
+        NSString *scheme = [url scheme];
+        if ([scheme isEqualToString:@"yg.welcare-tech.com.cn"]) {
+            [_wk_WebView goBack];
+        } else {
+            if (![scheme isEqualToString:@"https"] && ![scheme isEqualToString:@"http"]) {
+                [[UIApplication sharedApplication] openURL:url];
+            }
+        }
+        decisionHandler(WKNavigationActionPolicyAllow);
+    }
 }
-*/
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
+
