@@ -15,14 +15,12 @@
 		363853B8200465BA00899B11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853B7200465BA00899B11 /* main.m */; };
 		363853C2200465BA00899B11 /* iOSBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853C1200465BA00899B11 /* iOSBaseTests.m */; };
 		363853CD200465BA00899B11 /* iOSBaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853CC200465BA00899B11 /* iOSBaseUITests.m */; };
-		363853DE20046C4B00899B11 /* SYCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853DD20046C4B00899B11 /* SYCacheManager.m */; };
 		363853E020046DDC00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363853DF20046DDC00899B11 /* README.md */; };
 		363853E320046DF500899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363853E220046DF500899B11 /* README.md */; };
 		363853E620046DFC00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363853E520046DFC00899B11 /* README.md */; };
 		363853E920046E0400899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363853E820046E0300899B11 /* README.md */; };
 		363853EC20046E0B00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363853EB20046E0B00899B11 /* README.md */; };
 		363853F12004706800899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363853EE2004706800899B11 /* README.md */; };
-		363853F42004714D00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363853F32004714D00899B11 /* README.md */; };
 		363854162004981D00899B11 /* SPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853FB2004981D00899B11 /* SPUtil.m */; };
 		363854172004981D00899B11 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853FE2004981D00899B11 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		363854182004981D00899B11 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 363854012004981D00899B11 /* NSString+MD5.m */; };
@@ -32,7 +30,6 @@
 		3638541C2004981D00899B11 /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638540A2004981D00899B11 /* UIView+Extend.m */; };
 		3638541D2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638540C2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.m */; };
 		3638541F2004981D00899B11 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 363854122004981D00899B11 /* Util.m */; };
-		363854202004981D00899B11 /* BeanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 363854152004981D00899B11 /* BeanManager.m */; };
 		363854252004997200899B11 /* NetworkSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 363854212004997200899B11 /* NetworkSingleton.m */; };
 		363854262004997200899B11 /* RequestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 363854242004997200899B11 /* RequestParams.m */; };
 		3638542B20049D8500899B11 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638542820049D8500899B11 /* BaseNavViewController.m */; };
@@ -45,7 +42,6 @@
 		363854542004C0A600899B11 /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3638544D2004C0A600899B11 /* back_icon@2x.png */; };
 		363854552004C0A600899B11 /* SureWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638544E2004C0A600899B11 /* SureWebViewController.m */; };
 		363854572004C0C200899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854562004C0C100899B11 /* README.md */; };
-		363854592004C11A00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854582004C11900899B11 /* README.md */; };
 		3638545B2004C13200899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3638545A2004C13200899B11 /* README.md */; };
 		3638545D2004C4BB00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3638545C2004C4BB00899B11 /* README.md */; };
 		3638545F2004C4EF00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3638545E2004C4EF00899B11 /* README.md */; };
@@ -88,17 +84,13 @@
 		363853C8200465BA00899B11 /* iOSBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		363853CC200465BA00899B11 /* iOSBaseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSBaseUITests.m; sourceTree = "<group>"; };
 		363853CE200465BA00899B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		363853DC20046C4B00899B11 /* SYCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYCacheManager.h; sourceTree = "<group>"; };
-		363853DD20046C4B00899B11 /* SYCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYCacheManager.m; sourceTree = "<group>"; };
 		363853DF20046DDC00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363853E220046DF500899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363853E520046DFC00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363853E820046E0300899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363853EB20046E0B00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363853EE2004706800899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		363853F32004714D00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363853F5200495C100899B11 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		363853F82004977400899B11 /* FlowAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowAPI.h; sourceTree = "<group>"; };
 		363853FA2004981D00899B11 /* SPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUtil.h; sourceTree = "<group>"; };
 		363853FB2004981D00899B11 /* SPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUtil.m; sourceTree = "<group>"; };
 		363853FD2004981D00899B11 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -118,8 +110,6 @@
 		3638540C2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertViewAndActionSheet.m"; sourceTree = "<group>"; };
 		363854112004981D00899B11 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		363854122004981D00899B11 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
-		363854142004981D00899B11 /* BeanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeanManager.h; sourceTree = "<group>"; };
-		363854152004981D00899B11 /* BeanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeanManager.m; sourceTree = "<group>"; };
 		363854212004997200899B11 /* NetworkSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkSingleton.m; sourceTree = "<group>"; };
 		363854222004997200899B11 /* RequestParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestParams.h; sourceTree = "<group>"; };
 		363854232004997200899B11 /* NetworkSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkSingleton.h; sourceTree = "<group>"; };
@@ -137,11 +127,11 @@
 		3638544D2004C0A600899B11 /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
 		3638544E2004C0A600899B11 /* SureWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SureWebViewController.m; sourceTree = "<group>"; };
 		363854562004C0C100899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		363854582004C11900899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3638545A2004C13200899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3638545C2004C4BB00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3638545E2004C4EF00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363854602004C4F900899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		363CBD582196F9CC00D616E6 /* FlowAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowAPI.h; sourceTree = "<group>"; };
 		6D47F575D57BBA9836E5F5A5 /* Pods-iOSBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.release.xcconfig"; sourceTree = "<group>"; };
 		FC0F68CA62C14D611F9401DA /* Pods-iOSBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,24 +237,12 @@
 			children = (
 				363853DF20046DDC00899B11 /* README.md */,
 				363854462004C07800899B11 /* SureWebViewController */,
-				363854132004981D00899B11 /* BeanManager */,
 				363854022004981D00899B11 /* Category */,
 				363853FC2004981D00899B11 /* Encrypt */,
 				363853F92004981D00899B11 /* SPUtil */,
 				363854102004981D00899B11 /* Util */,
-				363853DB20046C4B00899B11 /* SYCacheManager */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		363853DB20046C4B00899B11 /* SYCacheManager */ = {
-			isa = PBXGroup;
-			children = (
-				363853F32004714D00899B11 /* README.md */,
-				363853DC20046C4B00899B11 /* SYCacheManager.h */,
-				363853DD20046C4B00899B11 /* SYCacheManager.m */,
-			);
-			path = SYCacheManager;
 			sourceTree = "<group>";
 		};
 		363853E120046DF500899B11 /* Define */ = {
@@ -272,7 +250,6 @@
 			children = (
 				363853E220046DF500899B11 /* README.md */,
 				363853F5200495C100899B11 /* PrefixHeader.pch */,
-				363853F82004977400899B11 /* FlowAPI.h */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -305,6 +282,7 @@
 				363854212004997200899B11 /* NetworkSingleton.m */,
 				363854222004997200899B11 /* RequestParams.h */,
 				363854242004997200899B11 /* RequestParams.m */,
+				363CBD582196F9CC00D616E6 /* FlowAPI.h */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -366,16 +344,6 @@
 				363854122004981D00899B11 /* Util.m */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		363854132004981D00899B11 /* BeanManager */ = {
-			isa = PBXGroup;
-			children = (
-				363854582004C11900899B11 /* README.md */,
-				363854142004981D00899B11 /* BeanManager.h */,
-				363854152004981D00899B11 /* BeanManager.m */,
-			);
-			path = BeanManager;
 			sourceTree = "<group>";
 		};
 		363854462004C07800899B11 /* SureWebViewController */ = {
@@ -527,11 +495,9 @@
 				363853F12004706800899B11 /* README.md in Resources */,
 				363854542004C0A600899B11 /* back_icon@2x.png in Resources */,
 				3638544F2004C0A600899B11 /* sure_placeholder_error@2x.png in Resources */,
-				363854592004C11A00899B11 /* README.md in Resources */,
 				363853EC20046E0B00899B11 /* README.md in Resources */,
 				363854512004C0A600899B11 /* back_icon@3x.png in Resources */,
 				363854532004C0A600899B11 /* close_icon@3x.png in Resources */,
-				363853F42004714D00899B11 /* README.md in Resources */,
 				3638545F2004C4EF00899B11 /* README.md in Resources */,
 				363853B0200465BA00899B11 /* Main.storyboard in Resources */,
 			);
@@ -607,7 +573,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3638542C20049D8500899B11 /* BaseViewController.m in Sources */,
-				363854202004981D00899B11 /* BeanManager.m in Sources */,
 				363854552004C0A600899B11 /* SureWebViewController.m in Sources */,
 				363854192004981D00899B11 /* UIButton+XYButton.m in Sources */,
 				363854162004981D00899B11 /* SPUtil.m in Sources */,
@@ -620,7 +585,6 @@
 				363854262004997200899B11 /* RequestParams.m in Sources */,
 				3638542B20049D8500899B11 /* BaseNavViewController.m in Sources */,
 				363854252004997200899B11 /* NetworkSingleton.m in Sources */,
-				363853DE20046C4B00899B11 /* SYCacheManager.m in Sources */,
 				3638541C2004981D00899B11 /* UIView+Extend.m in Sources */,
 				363853AA200465BA00899B11 /* AppDelegate.m in Sources */,
 				3638541A2004981D00899B11 /* UICollectionView+IndexPath.m in Sources */,

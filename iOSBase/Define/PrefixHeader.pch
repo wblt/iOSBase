@@ -26,7 +26,6 @@
 #import "UIButton+XYButton.h"
 #import "UIColor+Extend.h"
 #import "NetworkSingleton.h"
-#import "BeanManager.h"
 #import "UIViewController+AlertViewAndActionSheet.h"
 #import "UIView+Extend.h"
 #import "GTMBase64.h"
