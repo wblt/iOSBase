@@ -46,11 +46,6 @@
 		3638545D2004C4BB00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3638545C2004C4BB00899B11 /* README.md */; };
 		3638545F2004C4EF00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3638545E2004C4EF00899B11 /* README.md */; };
 		363854612004C4FA00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854602004C4F900899B11 /* README.md */; };
-		363CBD602196FE2E00D616E6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363CBD5B2196FE2E00D616E6 /* README.md */; };
-		363CBD612196FE2E00D616E6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363CBD5D2196FE2E00D616E6 /* README.md */; };
-		363CBD622196FE2E00D616E6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363CBD5F2196FE2E00D616E6 /* README.md */; };
-		363CBD652196FE6B00D616E6 /* RowsBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 363CBD642196FE6B00D616E6 /* RowsBean.m */; };
-		363CBD682197090600D616E6 /* ShopBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 363CBD672197090600D616E6 /* ShopBean.m */; };
 		92A34F38F4AC27A3C3ADFC02 /* libPods-iOSBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D497ADAEE224F0451F225E /* libPods-iOSBase.a */; };
 /* End PBXBuildFile section */
 
@@ -137,13 +132,6 @@
 		3638545E2004C4EF00899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363854602004C4F900899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363CBD582196F9CC00D616E6 /* FlowAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowAPI.h; sourceTree = "<group>"; };
-		363CBD5B2196FE2E00D616E6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		363CBD5D2196FE2E00D616E6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		363CBD5F2196FE2E00D616E6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		363CBD632196FE6B00D616E6 /* RowsBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RowsBean.h; sourceTree = "<group>"; };
-		363CBD642196FE6B00D616E6 /* RowsBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RowsBean.m; sourceTree = "<group>"; };
-		363CBD662197090600D616E6 /* ShopBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopBean.h; sourceTree = "<group>"; };
-		363CBD672197090600D616E6 /* ShopBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopBean.m; sourceTree = "<group>"; };
 		6D47F575D57BBA9836E5F5A5 /* Pods-iOSBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.release.xcconfig"; sourceTree = "<group>"; };
 		FC0F68CA62C14D611F9401DA /* Pods-iOSBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				363853EE2004706800899B11 /* README.md */,
-				363CBD592196FE2E00D616E6 /* Test */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -373,44 +360,6 @@
 				3638544E2004C0A600899B11 /* SureWebViewController.m */,
 			);
 			path = SureWebViewController;
-			sourceTree = "<group>";
-		};
-		363CBD592196FE2E00D616E6 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				363CBD5A2196FE2E00D616E6 /* Controller */,
-				363CBD5C2196FE2E00D616E6 /* Model */,
-				363CBD5E2196FE2E00D616E6 /* View */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		363CBD5A2196FE2E00D616E6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				363CBD5B2196FE2E00D616E6 /* README.md */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		363CBD5C2196FE2E00D616E6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				363CBD5D2196FE2E00D616E6 /* README.md */,
-				363CBD632196FE6B00D616E6 /* RowsBean.h */,
-				363CBD642196FE6B00D616E6 /* RowsBean.m */,
-				363CBD662197090600D616E6 /* ShopBean.h */,
-				363CBD672197090600D616E6 /* ShopBean.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		363CBD5E2196FE2E00D616E6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				363CBD5F2196FE2E00D616E6 /* README.md */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		7BAAC8F3E7B615690ABCDBBD /* Pods */ = {
@@ -533,12 +482,10 @@
 				363853E620046DFC00899B11 /* README.md in Resources */,
 				363853B5200465BA00899B11 /* LaunchScreen.storyboard in Resources */,
 				3638545B2004C13200899B11 /* README.md in Resources */,
-				363CBD602196FE2E00D616E6 /* README.md in Resources */,
 				3638545D2004C4BB00899B11 /* README.md in Resources */,
 				363853B2200465BA00899B11 /* Assets.xcassets in Resources */,
 				363854502004C0A600899B11 /* close_icon@2x.png in Resources */,
 				363853E920046E0400899B11 /* README.md in Resources */,
-				363CBD622196FE2E00D616E6 /* README.md in Resources */,
 				363854612004C4FA00899B11 /* README.md in Resources */,
 				363854572004C0C200899B11 /* README.md in Resources */,
 				363853E320046DF500899B11 /* README.md in Resources */,
@@ -551,7 +498,6 @@
 				363854512004C0A600899B11 /* back_icon@3x.png in Resources */,
 				363854532004C0A600899B11 /* close_icon@3x.png in Resources */,
 				3638545F2004C4EF00899B11 /* README.md in Resources */,
-				363CBD612196FE2E00D616E6 /* README.md in Resources */,
 				363853B0200465BA00899B11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,10 +574,8 @@
 				363853AD200465BA00899B11 /* ViewController.m in Sources */,
 				3638541F2004981D00899B11 /* Util.m in Sources */,
 				363853B8200465BA00899B11 /* main.m in Sources */,
-				363CBD682197090600D616E6 /* ShopBean.m in Sources */,
 				3638541B2004981D00899B11 /* UIColor+Extend.m in Sources */,
 				3638541D2004981D00899B11 /* UIViewController+AlertViewAndActionSheet.m in Sources */,
-				363CBD652196FE6B00D616E6 /* RowsBean.m in Sources */,
 				363854262004997200899B11 /* RequestParams.m in Sources */,
 				3638542B20049D8500899B11 /* BaseNavViewController.m in Sources */,
 				363854252004997200899B11 /* NetworkSingleton.m in Sources */,
